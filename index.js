@@ -54,7 +54,7 @@ app.use(session({
     },
     store: new MongoStore(
         {
-            mongoUrl:'mongodb://0.0.0.0:27017/HabitTrackerAppp' ,
+            mongoUrl:'mongodb://localhost:27017/HabitTrackerAppp' ,
             autoRemove: 'disabled'
         
         },
