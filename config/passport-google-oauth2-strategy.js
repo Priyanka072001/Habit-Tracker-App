@@ -8,7 +8,7 @@ const User = require('../models/user');
 passport.use(new googleStrategy({  // we create a new instance of the google strategy here
         clientID: '905609452707-ftcgmvrbh32kas8of6a8tjvc0suuqanv.apps.googleusercontent.com',
         clientSecret: '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', 
-        callbackURL: "http://localhost:8080/users/auth/google/callback", // this is the callback url which we will use to redirect the user after the authentication is done
+        callbackURL: "http://localhost:8000/users/auth/google/callback", // this is the callback url which we will use to redirect the user after the authentication is done
     },
 
     function(accessToken, refreshToken, profile, done){  // this is the callback function which will be called when the authentication is done
